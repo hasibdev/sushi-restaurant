@@ -1,0 +1,8 @@
+Libraries/*
+App/Backup/DB/*
+App/Configs/Config.php
+App/Cache/*
+Vendor/*
+public/uploads/images/*
+public/uploads/cache/*
+public/uploads/videos/*

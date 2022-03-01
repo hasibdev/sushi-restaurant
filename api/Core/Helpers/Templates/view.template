@@ -1,0 +1,15 @@
+<?php
+
+namespace Jara\App\Views;
+
+use Jara\App\Controllers\::name::Controller;
+
+class ::name::View
+{
+    public $controller;
+    
+    function __construct()
+    {
+        $this->controller = new ::name::Controller();
+    }
+}

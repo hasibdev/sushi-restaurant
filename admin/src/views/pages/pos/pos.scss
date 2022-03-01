@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+
+#pos * {
+  font-family: "Montserrat", sans-serif;
+}
+
+#pos .fa,
+#pos .fas,
+#pos .far,
+#pos .fas,
+#pos .fab {
+  font-family: "Font Awesome 5 Free";
+}
+
+.bold-italic {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cat-img-cover {
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.category-card .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 10px;
+}
+
+.product-item {
+  &:hover {
+    border: 2px solid var(--primary);
+  }
+  border: 2px solid #88888888;
+  border-radius: 5px;
+  .product-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 7.5px;
+    font-weight: bold;
+  }
+  .product-item-bottom {
+    border-top: 1px solid #eaeaea;
+    padding: 15px;
+    padding-top: 7.5px;
+  }
+}
+
+.btn.pos-btn {
+  box-shadow: 0 15px 20px rgb(0 0 0 / 15%) !important;
+  border-radius: 5px;
+}
+
+.item-title {
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.pos-is-option {
+  font-size: 9px;
+  display: flex;
+  justify-content: space-around;
+}
+
+p.mb-1.text-center {
+  max-height: 45px;
+  min-height: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.category-card {
+  border: 2px solid var(--primary);
+  &.selected {
+    border-color: var(--warning);
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+  max-height: 100vh !important;
+  #left-content {
+    overflow-y: auto;
+    height: 100vh;
+  }
+  #right-content {
+    height: 100vh;
+    overflow: hidden;
+    .scrollable-div {
+      height: 100vh;
+      overflow-y: auto;
+    }
+  }
+  .category-content {
+    overflow: hidden;
+    &.scrollable-div {
+      height: 100vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+button.pay-option {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  background: var(--white);
+  color: inherit;
+  border: 2px solid #88888888;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button.pay-option.active {
+  border: 2px solid var(--primary);
+}
+
+.remove-order {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+.order-item.card:hover {
+  .remove-order {
+    display: block;
+  }
+}
+
+.order-summery.card {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0 !important;
+  box-shadow: 0 -15px 20px #fff;
+}
+
+.spacer-big {
+  height: 50vh;
+}
+.item-card:hover .item-title {
+  color: var(--primary) !important;
+}
+
+.shadow-xxl {
+  box-shadow: 0 15px 20px rgb(0 0 0 / 15%) !important;
+}
+.border-left-3 {
+  border-left: 3px solid var(--primary);
+}
+
+#category-slider {
+  .slick-prev,
+  .slick-next {
+    z-index: 9;
+  }
+
+  .slick-next {
+    right: -6px !important;
+  }
+  .slick-prev {
+    left: -12px !important;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--primary);
+    font-size: 25px;
+  }
+}
+
+#category-slider {
+  .arrow {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    top: 106px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--primary);
+
+    &:hover {
+      color: var(--info);
+    }
+  }
+  .category-slide-prev {
+    left: 5px;
+  }
+  .category-slide-next {
+    right: 5px;
+  }
+}
+
+.limited-text {
+  //   width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-image {
+  position: relative;
+  margin-top: -60px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 7.5rem;
+  height: auto;
+  aspect-ratio: 1;
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-pointer {
+  cursor: pointer;
+
+  &:hover .product-image-overflow {
+    opacity: 1;
+  }
+}
+.product-image-overflow {
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+  position: absolute;
+  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  background: #222222b0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hold-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.add-price,
+.opt-price {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+}
+
+.add-price {
+  background: var(--danger);
+}
+
+.opt-price {
+  background: var(--warning);
+}
+
+#left-content {
+  background: #f3e3e4;
+}
+
+.top-info-bar {
+  border-bottom: 1px solid #eff2f7;
+}

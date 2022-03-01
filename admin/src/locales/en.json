@@ -1,0 +1,495 @@
+{
+  "navbar": {
+    "search": {
+      "text": "Search..."
+    },
+    "dropdown": {
+      "megamenu": {
+        "text": "Mega Menu",
+        "uicontent": {
+          "title": "UI Components",
+          "list": {
+            "lightbox": "Lightbox",
+            "rangeslider": "Range Slider",
+            "sweetalert": "Sweet Alert",
+            "rating": "Rating",
+            "forms": "Forms",
+            "tables": "Tables",
+            "charts": "Charts"
+          }
+        },
+        "application": {
+          "title": "Applications",
+          "list": {
+            "ecommerce": "Ecommece",
+            "calendar": "Calendar",
+            "email": "Email",
+            "projects": "Projects",
+            "tasks": "Tasks",
+            "contacts": "Contacts"
+          }
+        },
+        "extrapages": {
+          "title": "Extra Pages",
+          "list": {
+            "lightsidebar": "Light Sidebar",
+            "compactsidebar": "Compact Sidebar",
+            "horizontallayout": "Horizontal Layout",
+            "maintenance": "Maintenance",
+            "comingsoon": "Coming Soon",
+            "timeline": "Timeline",
+            "faqs": "FAQs"
+          }
+        }
+      },
+      "site": {
+        "list": {
+          "github": "GitHub",
+          "bitbucket": "Bitbucket",
+          "dribbble": "Dribbble",
+          "dropbox": "Dropbox",
+          "mailchimp": "Mail Chimp",
+          "slack": "Slack"
+        }
+      },
+      "notification": {
+        "text": "Notifications",
+        "subtext": "View All",
+        "order": {
+          "title": "Your order is placed",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "james": {
+          "title": "James Lemire",
+          "text": "It will seem like simplified English.",
+          "time": "1 hours ago"
+        },
+        "item": {
+          "title": "Your item is shipped",
+          "text": "If several languages coalesce the grammar",
+          "time": "3 min ago"
+        },
+        "salena": {
+          "title": "Salena Layfield",
+          "text": "As a skeptical Cambridge friend of mine occidental.",
+          "time": "1 hours ago"
+        },
+        "button": "Load More.."
+      },
+      "kevin": {
+        "text": "Kevin",
+        "list": {
+          "profile": "Profile",
+          "mywallet": "My Wallet",
+          "settings": "Settings",
+          "lockscreen": "Lock screen",
+          "logout": "Logout"
+        }
+      }
+    }
+  },
+  "dropdown": {
+    "details": "Details",
+    "edit": "Edit",
+    "delete": "Delete",
+    "sales_report": "Sales Report",
+    "export_report": "Sales Report",
+    "profit": "Profit",
+    "action": "Action"
+  },
+  "menuitems": {
+    "menu": {
+      "text": "Menu"
+    },
+    "home": {
+      "text": "Home"
+    },
+    "dashboard": {
+      "text": "Dashboard"
+    },
+    "reports": {
+      "text": "Reports"
+    },
+    "settings": {
+      "text": "Settings"
+    },
+    "theme": {
+      "text": "Theme"
+    },
+    "products": {
+      "text": "Products",
+      "list": {
+        "manage": "Manage Products",
+        "details": "Product Details",
+        "add": "Add Product",
+        "edit": "Edit Product"
+      }
+    },
+    "categories": {
+      "text": "Categories",
+      "list": {
+        "manage": "Manage Categories",
+        "add": "Add Category",
+        "details": "Category Details",
+        "edit": "Edit Category"
+      }
+    },
+    "additions": {
+      "text": "Additions",
+      "list": {
+        "manage": "Manage Additions",
+        "add": "Add Addition",
+        "details": "Addition Details",
+        "edit": "Edit Addition"
+      }
+    },
+    "options": {
+      "text": "Options",
+      "list": {
+        "manage": "Manage Options",
+        "details": "Option Details",
+        "add": "Add Option",
+        "edit": "Edit Option"
+      }
+    },
+    "offers": {
+      "text": "Offers",
+      "list": {
+        "manage": "Manage Offers",
+        "details": "Offer Details",
+        "add": "Add Offer",
+        "edit": "Edit Offer"
+      }
+    },
+    "discounts": {
+      "text": "Discounts",
+      "list": {
+        "manage": "Manage Discounts",
+        "details": "Discount Details",
+        "add": "Add Discount",
+        "edit": "Edit Discount"
+      }
+    },
+    "orders": {
+      "text": "Orders",
+      "list": {
+        "manage": "Manage Orders",
+        "details": "Order Details"
+      }
+    },
+    "pos": {
+      "text": "POS"
+    },
+    "users": {
+      "text": "Users",
+      "list": {
+        "manage": "Manage Users",
+        "details": "User Details",
+        "add": "Add User",
+        "edit": "Edit User"
+      }
+    },
+    "locations": {
+      "text": "Locations",
+      "list": {
+        "manage": "Manage Locations",
+        "details": "Location Details",
+        "add": "Add Location",
+        "edit": "Edit Location"
+      }
+    },
+    "layouts": {
+      "text": "Layouts",
+      "list": {
+        "horizontal": "Horizontal",
+        "lightsidebar": "Light Sidebar",
+        "compactsidebar": "Compact Sidebar",
+        "iconsidebar": "Icons Sidebar",
+        "boxed": "Boxed Layout",
+        "vertical": "Vertical",
+        "lighttopbar": "Light Topbar"
+      }
+    },
+    "apps": {
+      "text": "Apps"
+    },
+    "calendar": {
+      "text": "Calendar"
+    },
+    "chat": {
+      "text": "Chat",
+      "badge": "New"
+    },
+    "ecommerce": {
+      "text": "Ecommerce",
+      "list": {
+        "products": "Products",
+        "productdetail": "Product Detail",
+        "orders": "Orders",
+        "customers": "Customers",
+        "cart": "Cart",
+        "checkout": "Checkout",
+        "shops": "Shops",
+        "addproduct": "Add Product"
+      }
+    },
+    "email": {
+      "text": "Email",
+      "list": {
+        "inbox": "Inbox",
+        "reademail": "Read Email"
+      }
+    },
+    "kanban": {
+      "text": "Kanban Board"
+    },
+    "pages": {
+      "text": "Pages",
+      "home": "Home",
+      "contact": "Contact",
+      "menu": "Menu"
+    },
+    "authentication": {
+      "text": "Authentication",
+      "list": {
+        "login": "Login",
+        "register": "Register",
+        "recoverpwd": "Recover Password",
+        "lockscreen": "Lock screen"
+      }
+    },
+    "utility": {
+      "text": "Utility",
+      "list": {
+        "starter": "Starter Page",
+        "maintenance": "Maintenance",
+        "comingsoon": "Coming Soon",
+        "timeline": "Timeline",
+        "faqs": "FAQs",
+        "pricing": "Pricing",
+        "error404": "Error 404",
+        "error500": "Error 500"
+      }
+    },
+    "components": {
+      "text": "Components"
+    },
+    "uielements": {
+      "text": "UI Elements",
+      "list": {
+        "alerts": "Alerts",
+        "buttons": "Buttons",
+        "cards": "Cards",
+        "carousel": "Carousel",
+        "dropdowns": "Dropdowns",
+        "grid": "Grid",
+        "images": "Images",
+        "modals": "Modals",
+        "rangeslider": "Range Slider",
+        "progressbar": "Progress Bars",
+        "sweetalert": "Sweet Alert",
+        "tabs": "Tabs & Accordions",
+        "typography": "Typography",
+        "video": "Video",
+        "general": "General",
+        "lightbox": "Lightbox",
+        "sessiontimeout": "Session Timeout",
+        "rating": "Rating",
+        "notifications": "Notifications"
+      }
+    },
+    "forms": {
+      "text": "Forms",
+      "badge": "8",
+      "list": {
+        "elements": "Form Elements",
+        "validation": "Form Validation",
+        "advanced": "Form Advanced",
+        "editor": "Form Editor",
+        "fileupload": "Form File Upload",
+        "wizard": "Form Wizard",
+        "mask": "Form Mask"
+      }
+    },
+    "tables": {
+      "text": "Tables",
+      "list": {
+        "basic": "Basic Tables",
+        "advanced": "Advanced Table"
+      }
+    },
+    "charts": {
+      "text": "Charts",
+      "list": {
+        "apex": "Apex Chart",
+        "chartjs": "Chartjs Chart",
+        "chartist": "Chartist Chart",
+        "echart": "E Chart"
+      }
+    },
+    "icons": {
+      "text": "Icons",
+      "list": {
+        "remix": "Remix Icons",
+        "materialdesign": "Material Design",
+        "dripicons": "Dripicons",
+        "fontawesome": "Font Awesome 5"
+      }
+    },
+    "maps": {
+      "text": "Maps",
+      "list": {
+        "googlemap": "Google Maps",
+        "leaflet": "Leaflet Maps"
+      }
+    },
+    "multilevel": {
+      "text": "Multi Level",
+      "list": {
+        "level1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "level2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  },
+  "heading": {
+    "hero_section": "Hero Section",
+    "break_time": "Break Time",
+    "locations": "Locations",
+    "review_section": "Review Section",
+    "first_review": "First Review",
+    "second_review": "Second Review",
+    "offers": "Offers",
+    "features_item": "Features Item",
+    "latest_posts": "Latest Posts",
+    "cta": "Cta",
+    "analytics": "Analytics",
+    "best_seller": "Best Seller",
+    "sales_analytics": "Sales Analytics",
+    "this_year": "This Year",
+    "previous_year": "Previous Year",
+    "site_information": "Site information",
+    "delivery_settings": "Delivery settings",
+    "delevery_areas": "Delevery areas",
+    "delevery_time": "Delevery Time",
+    "open_hours": "Open Hours",
+    "social_media": "Social Media"
+  },
+  "button": {
+    "create": "Create",
+    "create_continue": "Create & Continue",
+    "update": "Update",
+    "update_continue": "Update & Continue",
+    "cancle": "Cancle",
+    "save": "Save",
+    "add_new": "Add New"
+  },
+  "label": {
+    "actions": "Actions",
+    "id": "Id",
+    "guid": "Guid",
+    "name": "Name",
+    "discount": "Discount",
+    "price": "Price",
+    "sold": "Sold",
+    "description": "Description",
+    "type": "Type",
+    "code": "Code",
+    "value": "Value",
+    "total_items": "Total Items",
+    "total_amount": "Total Amount",
+    "tax": "Tax",
+    "delivery_area": "Delivery Area",
+    "delivery_cost": "Delivery Cost",
+    "delivery_time": "Delivery Time",
+    "username": "Username",
+    "full_name": "Full Name",
+    "email": "Email",
+    "days": "Days",
+    "discount_amount": "Discount Amount",
+    "conditions": "Conditions",
+    "product": "Product",
+    "currency": "Currency",
+    "payment_method": "Payment Method",
+    "discount_coupon": "Discount Coupon",
+    "phone": "Phone",
+    "date": "Date",
+    "lat": "Lat",
+    "lng": "Lng",
+    "password": "Password",
+    "order": "Order",
+    "address": "Address",
+    "role": "Role",
+    "last_seen": "Last Seen",
+    "status": "Status",
+    "expire_date": "Expire Date",
+    "total_value": "Total Value",
+    "title": "Title",
+    "tagline": "Tagline",
+    "video": "Video",
+    "rating": "Rating",
+    "image": "Image",
+    "content": "Content",
+    "source": "Source",
+    "icon": "Icon",
+    "street": "Street",
+    "city": "City",
+    "url": "Url",
+    "zipCode": "Zip Code",
+    "note": "Note",
+    "openHour": "Open Hour",
+    "list": "List",
+    "options": "Options",
+    "closeHour": "Close Hour",
+    "category": "Category",
+    "additions": "Additions",
+    "image_caption": "Image Caption",
+    "deliveryCost": "Delivery Cost",
+    "country": "Country",
+    "header_logo": "Header Logo",
+    "footer_logo": "Footer Logo",
+    "theme_color": "Theme Color",
+    "author_name": "Author Name",
+    "author_image": "Author Image",
+    "is_open": "Is Open",
+    "minimum_cart_value": "Minimum Cart Value",
+    "currency_symbol": "Currency Symbol",
+    "menu_default_view": "Menu Default View",
+    "meta_title": "Meta Title",
+    "meta_description": "Meta Description",
+    "meta_keywords": "Meta Keywords",
+    "start_time": "Start Time",
+    "end_time": "End Time",
+    "select_locations": "Select Locations",
+    "button_title": "Button Title",
+    "CompletedOrders": "Completed Orders",
+    "ProcessingOrders": "Processing Orders",
+    "PendingOrders": "Pending Orders",
+    "ProductsSold": "Products Sold",
+    "AdditionsSold": "Additions Sold",
+    "TotalOrders": "Total Orders",
+    "CancelledOrders": "Cancelled Orders",
+    "OutForDeliveryOrders": "Out For Delivery",
+    "PaidOrders": "Paid Orders",
+    "TotalAmount": "Total Amount",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "maxNumberOfOrder": "Max Number Of Order"
+  },
+  "title": {
+    "show": "Show",
+    "entries": "entries",
+    "nodata_found": "No Data Found!",
+    "search": "Search"
+  },
+  "placeholder": {
+    "search": "Search...",
+    "loading": "Loading..."
+  }
+}

@@ -1,0 +1,162 @@
+<?php
+
+use Jara\App\Configs\Config;
+
+require __DIR__ . '/App/Configs/Config.php';
+
+/**
+ * Cli Tool for JaraAPI
+ */
+class Cli
+{
+    private $name;
+    public $input;
+    public $cmdArray;
+
+    public function __construct($name = 'Jara')
+    {
+        $this->name = $name;
+        $this->input();
+    }
+
+    public function input()
+    {
+
+        while (true) {
+            $line = readline($this->name . " $ ");
+            readline_add_history($line);
+            $this->input = $line;
+            $this->parse()->execute($this->cmdArray);
+        }
+
+        return $this;
+    }
+
+    public function parse()
+    {
+        $inputs = explode(' ', trim(preg_replace("/\s+/", " ", $this->input)));
+        $cmd = array();
+        $cmd['commands'] = array();
+        $cmd['arguments'] = array();
+
+        foreach ($inputs as $key => $input) {
+            if (substr($input, 0, 1) === "-") {
+                $input = str_replace('-', '', $input);
+                $cmd['arguments'][$key] = $input;
+            } else {
+                $cmd['commands'][$key] = $input;
+            }
+        }
+        $this->cmdArray = $cmd;
+        return $this;
+    }
+
+
+    public function color($str, $type = '')
+    {
+        switch ($type) {
+            case 'e': //error
+                return "\033[31m$str\033[0m";
+                break;
+            case 's': //success
+                return "\033[32m$str\033[0m";
+                break;
+            case 'w': //warning
+                return "\033[33m$str\033[0m";
+                break;
+            case 'i': //info
+                return "\033[36m$str\033[0m";
+                break;
+            default:
+                return $str;
+                break;
+        }
+    }
+
+    public function execute($cmd)
+    {
+        switch ($cmd) {
+                // clear
+            case $cmd['commands'][0] === 'clear' || $cmd['commands'][0] === 'cls':
+                if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+                    system('cls');
+                } else {
+                    system('clear');
+                }
+                break;
+
+                // exit
+            case $cmd['commands'][0] === 'exit':
+                echo $this->color("Goodbye...", 's') . "\n";
+                exit();
+                break;
+
+                // mvc
+            case $cmd['commands'][0] === 'mvc':
+                if (isset($cmd['commands'][1]) && $cmd['commands'][1]) {
+                    $name = ucwords(strtolower($cmd['commands'][1]));
+
+                    $model = __DIR__ . '/App/Models/' . $name . 'Model.php';
+                    $view = __DIR__ . '/App/Views/' . $name . 'View.php';
+                    $controller = __DIR__ . '/App/Controllers/' . $name . 'Controller.php';
+
+                    if (!file_exists($model)) {
+                        $content = file_get_contents(__DIR__ . '/Core/Helpers/Templates/model.template');
+                        $content = str_replace('::name::', $name, $content);
+                        file_put_contents($model, $content);
+                        echo $this->color('Created ' . $name . 'Model.php', 's') . "\n";
+                    } else {
+                        echo $this->color("Model $name already exists. \n", 'w');
+                    }
+
+                    if (!file_exists($view)) {
+                        $content = file_get_contents(__DIR__ . '/Core/Helpers/Templates/view.template');
+                        $content = str_replace('::name::', $name, $content);
+                        file_put_contents($view, $content);
+                        echo $this->color('Created ' . $name . 'View.php', 's') . "\n";
+                    } else {
+                        echo $this->color("View $name already exists. \n", 'w');
+                    }
+
+                    if (!file_exists($controller)) {
+                        $content = file_get_contents(__DIR__ . '/Core/Helpers/Templates/controller.template');
+                        $content = str_replace('::name::', $name, $content);
+                        file_put_contents($controller, $content);
+                        echo $this->color('Created ' . $name . 'Controller.php', 's') . "\n";
+                    } else {
+                        echo $this->color("Controller $name already exists. \n", 'w');
+                    }
+                }
+                break;
+
+                // serve
+            case $cmd['commands'][0] === 'serve':
+                exec('php -S 127.0.0.1:8000', $output, $result);
+                print_r($result);
+                print_r($output);
+                break;
+
+                // serve
+            case $cmd['commands'][0] === 'backup':
+
+                $filename = __DIR__ . '/App/Backups/DB/jara_db_backup_' . date('d_m_y_h_m_s') . '.sql';
+
+                $result = exec('mysqldump ' . Config::$db_name . ' --password=' . Config::$db_password . ' --user=' . Config::$db_username . ' --single-transaction >' . $filename, $output);
+
+                if (empty($output)) {
+                    echo $this->color("Database backup complete. \n", 's');
+                    echo $this->color("Location: $filename \n", 'i');
+                } else {
+                    echo $this->color("Database backup failed. \n", 'e');
+                }
+                break;
+
+            default:
+                echo "\n" . $this->color('Error: ', 'e') . $this->color($cmd['commands'][0], 's') . $this->color(' is an invalid command.', 'i') . "\n\n";
+                break;
+        }
+    }
+}
+
+
+$cli = new Cli();

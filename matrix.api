@@ -1,0 +1,8 @@
+https://maps.googleapis.com/maps/api/distancematrix/json?origins={{origin}}&destinations={{destinations}}&key=AIzaSyD0hMSWOkrQzxWwLnK6BDJlkcdnboshbvI
+
+// get distance between two points
+
+https://maps.googleapis.com/maps/api/distancematrix/json?origins=Dhaka&destinations=Chittagong&key=AIzaSyD0hMSWOkrQzxWwLnK6BDJlkcdnboshbvI
+
+// select in range
+SELECT * FROM posts WHERE datetime BETWEEN '2022-01-15 05:00:00' and '2022-01-16 09:00:00'

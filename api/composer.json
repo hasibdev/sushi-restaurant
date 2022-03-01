@@ -1,0 +1,30 @@
+{
+    "name": "opuu/jara",
+    "description": "JaraApi",
+    "type": "library",
+    "license": "GPL 2",
+    "autoload": {
+        "psr-4": {
+            "Jara\\": "./"
+        }
+    },
+    "config": {
+        "vendor-dir": "./Vendor",
+        "process-timeout": 0
+    },
+    "authors": [
+        {
+            "name": "Opu",
+            "email": "obayed.opu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "imagecow/imagecow": "^2.4",
+        "stripe/stripe-php": "^7.108"
+    },
+    "scripts": {
+        "serve": "php -S localhost:4000 -t public/"
+    }
+}

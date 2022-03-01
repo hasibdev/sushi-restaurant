@@ -1,0 +1,265 @@
+{
+    "navbar": {
+        "search": {
+            "text": "Rechercher..."
+        }
+    },
+    "menuitems": {
+        "menu": {
+            "text": "La Carte"
+        },
+        "home": {
+            "text": "Accueil"
+        },
+        "dashboard": {
+            "text": "Tableau de bord"
+        },
+        "settings": {
+            "text": "Réglages"
+        },
+        "theme": {
+            "text": "Thème"
+        },
+        "products": {
+            "text": "Produits",
+            "list": {
+                "manage": "Gérer les produits",
+                "details": "Détails du produit",
+                "add": "Ajouter un produit",
+                "edit": "Modifier le produit"
+            }
+        },
+        "categories": {
+            "text": "Categories",
+            "list": {
+                "manage": "Gérer les catégories",
+                "add": "ajouter une catégorie",
+                "details": "Détails de la catégorie",
+                "edit": "Modifier la catégorie"
+            }
+        },
+        "additions": {
+            "text": "Ajouts",
+            "list": {
+                "manage": "Gérer les ajouts",
+                "add": "Ajouter un ajout",
+                "details": "Addition Details",
+                "edit": "Détails supplémentaires"
+            }
+        },
+        "options": {
+            "text": "Options",
+            "list": {
+                "manage": "Gérer les options",
+                "details": "Détails des options",
+                "add": "Ajouter une option",
+                "edit": "Modifier l'option"
+            }
+        },
+        "offers": {
+            "text": "Des offres",
+            "list": {
+                "manage": "Gérer les offres",
+                "details": "Détails de l'offre",
+                "add": "Détails de l'offre",
+                "edit": "Modifier l'offre"
+            }
+        },
+        "discounts": {
+            "text": "Remises",
+            "list": {
+                "manage": "Gérer les remises",
+                "details": "Discount Details",
+                "add": "Add Discount",
+                "edit": "Edit Discount"
+            }
+        },
+        "orders": {
+            "text": "Orders",
+            "list": {
+                "manage": "Gérer les commandes",
+                "details": "détails de la commande"
+            }
+        },
+        "pos": {
+            "text": "PDV"
+        },
+        "users": {
+            "text": "Utilisatrices",
+            "list": {
+                "manage": "gérer les utilisateurs",
+                "details": "Détails de l'utilisateur",
+                "add": "Ajouter un utilisateur",
+                "edit": "Modifier l'utilisateur"
+            }
+        },
+        "locations": {
+            "text": "Emplacements",
+            "list": {
+                "manage": "Gérer les emplacements",
+                "details": "Détails de l'emplacement",
+                "add": "Ajouter un emplacement",
+                "edit": "Modifier l'emplacement"
+            }
+        },
+        "pages": {
+            "text": "Pages",
+            "home": "Accueil",
+            "contact": "Contact",
+            "menu": "Menu"
+        },
+        "authentication": {
+            "text": "Authentification",
+            "list": {
+                "login": "Connexion",
+                "register": "S'inscrire",
+                "recoverpwd": "Récupérer mot de passe",
+                "lockscreen": "Écran verrouillé"
+            }
+        },
+        "utility": {
+            "text": "Utilitaire",
+            "list": {
+                "starter": "Page de démarrage",
+                "maintenance": "Maintenance",
+                "comingsoon": "À venir",
+                "timeline": "Chronologie",
+                "faqs": "FAQ",
+                "pricing": "Prix",
+                "error404": "Erreur 404",
+                "error500": "Erreur 500"
+            }
+        },
+        "components": {
+            "text": "Composantes"
+        }
+    },
+    "heading": {
+        "hero_section": "Section Héros",
+        "break_time": "Pause",
+        "locations": "Emplacements",
+        "review_section": "Section de révision",
+        "first_review": "Premier examen",
+        "second_review": "Deuxième examen",
+        "offers": "Des offres",
+        "features_item": "Élément de fonctionnalités",
+        "latest_posts": "Derniers messages",
+        "cta": "Cta",
+        "analytics": "Analytique",
+        "best_seller": "Best Seller",
+        "sales_analytics": "Analyse des ventes",
+        "this_year": "Cette année",
+        "previous_year": "Année précédente",
+        "site_information": "Informations sur le site",
+        "delivery_settings": "Paramètres de livraison",
+        "delevery_areas": "Zones de livraison",
+        "delevery_time": "Heure de livraison",
+        "open_hours": "Heures d'ouverture",
+        "social_media": "Média social"
+    },
+    "button": {
+        "create": "Créer",
+        "create_continue": "Créer et continuer",
+        "update": "Mettre à jour",
+        "update_continue": "Mettre à jour et continuer",
+        "cancle": "Canclé",
+        "save": "Sauvegarder",
+        "add_new": "Ajouter un nouveau"
+    },
+    "label": {
+        "actions": "Actions",
+        "id": "Identifiant",
+        "guid": "Guide",
+        "name": "Nom",
+        "discount": "Remise",
+        "price": "Prix",
+        "sold": "Vendue",
+        "description": "La description",
+        "type": "Taper",
+        "code": "Code",
+        "value": "Valeur",
+        "total_items": "Articles au total",
+        "total_amount": "Montant total",
+        "delivery_area": "Zone de livraison",
+        "delivery_cost": "Frais de port",
+        "delivery_time": "Heure de livraison",
+        "username": "Nom d'utilisateur",
+        "full_name": "Nom complet",
+        "email": "Email",
+        "days": "Jours",
+        "discount_amount": "Montant de la remise",
+        "conditions": "Conditions",
+        "product": "Produit",
+        "currency": "Currency",
+        "payment_method": "Mode de paiement",
+        "discount_coupon": "Coupon de réduction",
+        "phone": "Téléphoner",
+        "date": "Date",
+        "lat": "Lat",
+        "lng": "Lng",
+        "password": "Mot de passe",
+        "address": "Adresse",
+        "role": "Rôle",
+        "last_seen": "Vu pour la dernière fois",
+        "status": "Statut",
+        "expire_date": "Date d'expiration",
+        "total_value": "Valeur totale",
+        "title": "Titre",
+        "tagline": "Slogan",
+        "video": "Vidéo",
+        "rating": "Évaluation",
+        "image": "Image",
+        "content": "Contenu",
+        "source": "Source",
+        "icon": "Icône",
+        "street": "rue",
+        "city": "Ville",
+        "url": "Url",
+        "zipCode": "Code postal",
+        "note": "Noter",
+        "openHour": "Heure d'ouverture",
+        "list": "Lister",
+        "options": "Options",
+        "closeHour": "Heure de fermeture",
+        "category": "Category",
+        "additions": "Catégorie",
+        "image_caption": "Légende",
+        "deliveryCost": "Frais de port",
+        "country": "Pays",
+        "header_logo": "Logo d'en-tête",
+        "footer_logo": "Footer Logo",
+        "theme_color": "Couleur du thème",
+        "author_name": "Nom de l'auteur",
+        "author_image": "Image de l'auteur",
+        "is_open": "Est ouvert",
+        "minimum_cart_value": "Valeur minimale du panier",
+        "currency_symbol": "Symbole de la monnaie",
+        "menu_default_view": "Affichage par défaut du menu",
+        "meta_title": "Titre du méta",
+        "meta_description": "Meta Description",
+        "meta_keywords": "Méta mots-clés",
+        "start_time": "Start Time",
+        "end_time": "Heure de fin",
+        "select_locations": "Heure de fin",
+        "button_title": "Titre du bouton",
+        "CompletedOrders": "Commandes terminées",
+        "ProcessingOrders": "Traitement des commandes",
+        "PendingOrders": "Les ordres en attente",
+        "ProductsSold": "Produits vendus",
+        "AdditionsSold": "Ajouts vendus",
+        "TotalOrders": "Total des commandes",
+        "startTime": "Heure de début",
+        "endTime": "Heure de fin",
+        "maxNumberOfOrder": "Nombre maximum de commande"
+    },
+    "title": {
+        "show": "Montrer",
+        "entries": "entrées",
+        "nodata_found": "Aucune donnée disponible!",
+        "search": "Chercher"
+    },
+    "placeholder": {
+        "search": "Chercher...",
+        "loading": "Chargement..."
+    }
+}

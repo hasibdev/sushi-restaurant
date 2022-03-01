@@ -1,0 +1,15 @@
+<?php
+
+namespace Jara\App\Controllers;
+
+use Jara\App\Models\::name::Model;
+
+class ::name::Controller
+{
+    public $model;
+    
+    function __construct()
+    {
+        $this->model = new ::name::Model();
+    }
+}
